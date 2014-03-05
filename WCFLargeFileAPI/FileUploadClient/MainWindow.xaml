@@ -1,0 +1,41 @@
+﻿<Window x:Class="FileUploader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:fileUploader="clr-namespace:FileUploader"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+    <GroupBox Header="Smoke Test">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Label>Name:</Label>
+            <TextBox x:Name="txtName" Width="100"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Button Content="Say Hello" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+            <Button Content="Say Hello Async" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="SayHelloAsync"/>
+        </StackPanel>   
+        </Grid>
+    </GroupBox>
+    <GroupBox Header="File Upload">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+            </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    <Label>File Location:</Label>
+                    <TextBox Name="txtFileName"  fileUploader:OpenFileDialogEx.Filter="All Files (.*)|*.*"></TextBox>
+                    <Button>Browse</Button>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <Button Content="Upload byte[]" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="ByteUpload"/>
+                    <Button Content="Upload Stream" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="StreamUpload"/>
+                </StackPanel>
+            </Grid>
+    </GroupBox>
+    </StackPanel>
+</Window>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFLargeFileAPI", "WCFLargeFileAPI\WCFLargeFileAPI.csproj", "{30C9F5D9-4F95-41CD-B169-7F42D2C3B1D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{EAE41138-E20B-4961-BBDF-B96E9D4BC194}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUploader", "FileUploadClient\FileUploader.csproj", "{58926C11-9F43-4F15-A4E0-F8B38A5C5DAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30C9F5D9-4F95-41CD-B169-7F42D2C3B1D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C9F5D9-4F95-41CD-B169-7F42D2C3B1D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C9F5D9-4F95-41CD-B169-7F42D2C3B1D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C9F5D9-4F95-41CD-B169-7F42D2C3B1D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE41138-E20B-4961-BBDF-B96E9D4BC194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE41138-E20B-4961-BBDF-B96E9D4BC194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE41138-E20B-4961-BBDF-B96E9D4BC194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE41138-E20B-4961-BBDF-B96E9D4BC194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58926C11-9F43-4F15-A4E0-F8B38A5C5DAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58926C11-9F43-4F15-A4E0-F8B38A5C5DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58926C11-9F43-4F15-A4E0-F8B38A5C5DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58926C11-9F43-4F15-A4E0-F8B38A5C5DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
