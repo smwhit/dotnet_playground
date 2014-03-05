@@ -8,7 +8,6 @@ namespace WCFLargeFileAPI
         public UploadFileResponse UploadFile(byte[] fileBytes)
         {
             var response = new UploadFileResponse();
-
             File.WriteAllBytes("test.txt", fileBytes);
 
             response.Message = "Successfully completed";
@@ -17,7 +16,6 @@ namespace WCFLargeFileAPI
 
         public UploadFileResponse UploadFileViaStream(Stream stream)
         {
-
             var response = new UploadFileResponse();
             using (var fileStream = File.Create("teststreamdump.txt"))
             {
